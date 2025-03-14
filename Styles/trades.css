@@ -1,0 +1,54 @@
+.trades-container{
+  width:100%;
+  height:100%;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+.trades-card{
+  height:250px;
+  width:30%;
+border-radius: 10px;  ;
+  background-color: rgba(0, 255, 213, 0.877);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-between;;
+  cursor: pointer;
+}
+.trades-card:hover{
+  transform: translateX(5px);
+  transform: translateY(5px);
+  transition: 1s;
+}
+.trades-card-top{
+  height:70px;
+  width:100%;
+  flex-direction: column;
+  font-weight: bold;
+font-size: 25px;
+}
+.trades-card-middle{
+  width:100%;
+  justify-content: space-between;
+  padding: 0 10px ;
+}
+.trades-card-bottom-heading{
+  font-weight: bold;
+  font-size: 20px;
+}
+.trades-card-bottom{
+  width:100%; 
+}
+.trades-card-bottom-desc{
+  justify-content: space-evenly;
+  width:100%;
+  height:30px;
+}
+.hr{
+  width:90%;
+  height:1px;
+  border:1px solid rgb(255, 255, 255);
+}
+.trades-card-bottom-status{
+  color:rgba(255, 0, 0, 0.925);
+}

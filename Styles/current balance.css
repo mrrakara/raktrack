@@ -1,0 +1,271 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+body {
+  overflow: hidden;
+}
+
+.main-container {
+  position: relative;
+}
+
+
+/* balance container */
+.balance-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.balance-container-left {
+  width: 40%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.balance-container-right {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(39,122,122);
+  border-radius: 15px 15px 0 0 ;
+}
+.balance-container-left-bank,
+.balance-container-left-atm-card,
+.balance-container-left-quick-actions{
+  max-width:400px;
+  width:90%;
+  margin:0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+
+/* bank Card */
+.balance-container-left-bank{
+  height:150px;
+  background-color: rgb(255, 255, 255);
+}
+
+.balance-container-left-name{
+  font-size: 30px;
+  font-weight: bold;
+text-shadow: 1px 1px 2px black;;
+  color: #3377ff;
+  width:100%;text-align: center;
+
+}
+.balance-container-left-account-type{
+  color:rgb(81, 81, 81);
+  font-size: 25px;
+}
+.balance-container-left-account-no{
+  letter-spacing: 2px;;
+}
+.balance-container-left-balance{
+  color:rgb(0, 184, 28);
+  font-weight: bold;
+  font-size: 30px;;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 2px;
+}
+
+
+/* atm card */
+.balance-container-left-atm-card{
+  background-color: rgb(45,65,90);
+  height:200px;
+
+}
+.card {
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  text-shadow: 1px 1px 5px black;
+}
+
+.bank-name {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #3377ff;
+}
+
+.chip img {
+  width: 40px;
+  position: absolute;
+  top: 70px;
+  left:47px;
+}
+
+.card-title {
+  font-size: 20px; 
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.card-title span {
+  font-size: 12px;
+  color: lightgray;
+  text-align: center;
+}
+
+.card-type {
+  font-size: 18px;
+  font-style: italic;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  letter-spacing: 10px;
+  color:rgb(208, 159, 60);
+}
+
+.card-number {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+}
+
+.expiry {
+  font-size: 12px;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+
+.card-holder {
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color:rgb(255, 171, 103);
+}
+
+.visa-logo img {
+  width: 50px;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+
+/* quick actions */
+.balance-container-left-quick-actions{
+  background-color: rgb(255, 255, 255);
+  height:210px;
+  margin-bottom:5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.header {
+  background: black;
+  width:100%;
+  height:50px;
+  border-radius: 9px 9px 0 0;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.action-list {
+  list-style: none;
+  padding: 15px;
+  height:calc(100% - 50px);
+}
+
+.action-list li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  padding: 2px 0;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.action-list li:hover {
+  color: black;
+  transform: translateX(5px);
+}
+
+.action-list img {
+  width: 24px;
+  margin-right: 12px;
+}
+
+/* Transaction Card */
+
+.heading {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  color:white;
+}
+
+.card-container {
+  height:calc(100% - 50px);
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.card-container::-webkit-scrollbar{
+  width:10px;
+}
+.card-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d5aeff, #2575fc);
+  border-radius: 10px;
+}
+
+.transactions-card {
+  width: 98%;
+  margin: 10px auto;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.transactions-card-date,
+.transactions-card-payment-type,
+.transactions-card-status {
+  color: grey;
+  font-size: 12px;
+}
+
+.transactions-card-credit-debit {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(0, 184, 28);
+  letter-spacing: 1px;
+}
+
+.transactions-card-amount,
+.transactions-card-heading {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(56, 56, 56);
+  letter-spacing: 2px;
+}

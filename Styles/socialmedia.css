@@ -1,0 +1,54 @@
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1E1E2F;
+      color: #EAEAEA;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container */
+    .social-container {
+      width: 100%;
+      min-width: 600px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    /* Heading */
+    .social-heading {
+      font-size: 2em;
+      color: #FF6B6B;
+      margin-bottom: 20px;
+    }
+
+    /* Grid Layout */
+    .social-grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 15px;
+      width: 800px;
+      background-color: #3A3A48;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Social Icons */
+    .social-icon img {
+      width: 80px;
+      height: auto;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Hover Effect */
+    .social-icon:hover img {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }

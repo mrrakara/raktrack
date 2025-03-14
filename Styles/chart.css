@@ -1,0 +1,42 @@
+.cart-container{
+  gap:10px;
+  width:100%;
+
+  flex-wrap: wrap;
+}
+
+.chart-card{
+  width:48%;
+  height:290px;
+  background-color: rgb(252, 252, 252);
+  border-radius: 10px;;
+}
+.chart-card-top{
+  font-size: 18px;
+  font-weight: bold;
+  height:50px;
+}
+
+.chart-card-middle{
+  height:calc(100% - 80px);
+}
+.chart-card-middle-left-title{
+  width:fit-content;
+  height:100%;
+  text-align: center;
+  writing-mode: vertical-rl; /* Rotates text top to bottom */
+  text-orientation: upright;
+  color:grey;
+}
+.chart-card-middle-left-img{
+  width:100%;
+  height:100%;
+}
+.chart-card-middle-left-img img{
+  width:100%;
+  height:100%;
+  object-position: center;
+}
+.chart-card-bottom {
+  color:grey;
+}

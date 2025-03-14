@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RakTrack - Signup</title>
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/cd2934c914.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+    /* font-family: "DM Serif Text", serif; */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      font-family: "DM Serif Text", serif;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1a1a1a;
+    }
+
+    .left-signup-container {
+      height: 400px;
+      width: 400px;
+    }
+
+    .left-signup-container img {
+      height: 100%;
+      width: 100%;
+    }
+
+
+
+
+    .right-signup-container {
+      background-color: rgb(211, 211, 211);
+      height: 350px;
+      width: 350px;
+      border-radius: 0 20px 20px 0;
+    }
+
+    .right-signup-container form {
+      width: 100%;
+      height: 100%;
+    }
+
+    .form {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .right-signup-container-heading {
+      height: 70px;
+      width: 100%;
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    .right-signup-container-input {
+      height: 40px;
+      width: 90%;
+      margin: 10px auto;
+      gap: 10px;
+      border-bottom: 1px solid grey;
+
+    }
+
+    .right-signup-container-input input {
+      height: 100%;
+      width: 80%;
+      margin: auto;
+      outline: none;
+      border: 0;
+      background-color: transparent;
+      padding: 0 10px;
+    }
+
+    .right-signup-container-input i {
+      height: 100%;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .input-container {
+      height: 200px;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .right-signup-container-submit-btn {
+      height: 50px;
+      width: 100%;
+    }
+
+    .right-signup-container-submit-btn p,
+    .right-signup-container-submit-btn input {
+      width: 90%;
+      height: 40px;
+      border: 0;
+      outline: none;
+      border-radius: 50px;
+      background-color: rgb(3, 90, 122);
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .right-signup-container-footer {
+      height: 50px;
+      /* background-color: #bc3f3f; */
+      justify-content: space-evenly;
+    }
+
+    .right-signup-container-input-terms {
+      justify-content: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="signup-container flex">
+    <div class="left-signup-container flex">
+      <a href="../index.html">
+        <img src="../img/Loginbg.png">
+      </a>
+    </div>
+    <div class="right-signup-container flex">
+      <form>
+        <div class="right-signup-container-heading flex">
+          Create an Account
+        </div>
+        <!-- Signup1 -->
+        <div class="form" id="signup-container1">
+          <div class="input-container flex">
+            <div class="right-signup-container-input flex">
+              <input type="fullname" name="fullname" placeholder="fullname">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="right-signup-container-input flex">
+              <input type="email" name="email" placeholder="email">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="right-signup-container-input flex">
+              <input type="password" name="password" placeholder="password">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+          </div>
+
+          <div class="right-signup-container-submit-btn flex">
+            <p onclick="submitNext1()" id="signup-next-btn-1" class="flex"> Next </p>
+          </div>
+        </div>
+
+        <!-- Signup2 -->
+        <div class="form" id="signup-container2">
+          <div class="input-container flex">
+            <div class="right-signup-container-input flex">
+              <input type="text" name="address" placeholder="address">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="right-signup-container-input flex">
+              <input type="text" name="state" placeholder="state">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="right-signup-container-input flex">
+              <input type="number" name="pin" placeholder="pin">
+              <i class="fa-solid fa-house"></i>
+            </div>
+          </div>
+
+          <div class="right-signup-container-submit-btn flex">
+            <p id="signup-next-btn-2" class="flex" onclick="submitNext2()"> Next </p>
+          </div>
+
+        </div>
+
+        <!-- Signup3 -->
+        <div class="form" id="signup-container3">
+          <div class="input-container flex">
+            <div class="right-signup-container-input flex">
+              <input type="text" name="date of birth" placeholder="date of birth">
+              <i class="fa-regular fa-calendar"></i>
+            </div>
+            <div class="right-signup-container-input flex">
+              <input type="text" name="gender" placeholder="gender">
+              <i class="fa-solid fa-venus-mars"></i>
+            </div>
+            <div class="right-signup-container-input-terms flex">
+              <input type="checkbox" name="term and condition" id="t&c">
+              <a href=""> accept our terms & conditions</a>
+            </div>
+          </div>
+
+          <div class="right-signup-container-submit-btn flex">
+            <input type="submit" value="Signup" id="signup-next-btn-3">
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script>
+    let signupContainer1 = document.getElementById("signup-container1");
+    let signupContainer2 = document.getElementById("signup-container2");
+    let signupContainer3 = document.getElementById("signup-container3");
+
+    signupContainer1.style.display = "block";
+    signupContainer2.style.display = "none";
+    signupContainer3.style.display = "none";
+    console.log(signupContainer1);
+    console.log(signupContainer2);
+    console.log(signupContainer3);
+
+
+
+    const submitNext1 = () => {
+      signupContainer2.style.display = "block";
+
+      signupContainer1.style.display = "none";
+      signupContainer3.style.display = "none";
+    }
+
+    const submitNext2 = () => {
+      signupContainer3.style.display = "block";
+
+      signupContainer1.style.display = "none";
+      signupContainer2.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

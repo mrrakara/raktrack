@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rak Track - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/cd2934c914.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- sidenav -->
+  <div class="side-nav-bar">
+    <div class="logo" id="long-logo">
+      <h2>Rak</h2>
+      <h2>Track</h2>
+    </div>
+
+    <div class="top-link">
+      <ul id="nav-bar-mobile">
+        <li id="main-list"><a href="pages/current balance.html"><i class="fa-solid fa-sack-dollar"></i>
+            <p>Current Balance</p>
+          </a></li>
+        <li id="main-list"><a href="pages/expense.html"><i class="fa-solid fa-wallet"></i>
+            <p>Total Expences</p>
+          </a></li>
+        <li id="main-list"><a href="pages/trades.html"><i class="fa-solid fa-chart-simple"></i>
+            <p>My Trades</p>
+          </a></li>
+        <li id="main-list"><a href="pages/transactions.html"><i class="fa-solid fa-money-bill-transfer"></i>
+            <p>Transactions</p>
+          </a></li>
+        <li id="main-list"><a href="pages/charts.html"><i class="fa-solid fa-chart-line"></i>
+            <p>Profit/Loss</p>
+          </a></li>
+      </ul>
+    </div>
+
+    <div class="bottom-link">
+      <ul>
+        <li> <a href="pages/about.html"> About Me </a></li>
+        <li> <a href="pages/contact.html"> Contact Us </a></li>
+        <li> <a href="pages/socialmedia.html"> Social Media </a></li>
+        <li> <a href="pages/partners.html"> Partners </a></li>
+      </ul>
+    </div>
+
+    <div class="menu" onclick="navToggle()" id="menu-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/54/54782.png" id="menu-icon">
+    </div>
+
+  </div>
+
+  <!-- navbar -->
+  <div class="nav-bar" id="nav-bar-box">
+    <ul>
+      <li>
+        <a href="#">Sort</a>
+      </li>
+      <li>
+        <a href="#">Report</a>
+      </li>
+      <li>
+        <a href="pages/trades.html">Trades</a>
+      </li>
+      <li>
+        <a href="pages/charts.html">Charts</a>
+      </li>
+    </ul>
+
+    <a href="pages/login.html">
+      <div class="user-logo">
+        <img src="https://cdn-icons-png.flaticon.com/128/4440/4440953.png" alt="">
+      </div>
+    </a>
+  </div>
+
+
+  <!-- main -->
+  <div id="main-container">
+
+    <!-- current balance card -->
+    <div class="top-cards">
+        <div class="top-card">
+          <div class="top-card-heading">Current Balance</div>
+          <div class="top-card-money balance-money">₹6456.7</div>
+          <div class="top-card-footer">
+            <div class="top-card-footer-left">
+              <div class="top-card-footer-left-row1">Transaction</div>
+              <div class="top-card-footer-left-row2">Download Summary</div>
+            </div>
+            <div class="top-card-footer-right">
+              <img src="https://cdn-icons-png.flaticon.com/128/10691/10691802.png" alt="date image">
+            </div>
+          </div>
+    </div>
+
+    <!-- total expence card -->
+    <div class="top-card expence-card">
+        <div class="top-card-heading">Total Expence</div>
+        <div class="top-card-money expence-money">₹1346.3</div>
+        <div class="top-card-footer">
+          <div class="top-card-footer-left">
+            <div class="top-card-footer-left-row1">Transaction</div>
+            <div class="top-card-footer-left-row2">Download Summary</div>
+          </div>
+          <div class="top-card-footer-right">
+            <img src="https://cdn-icons-png.flaticon.com/128/10691/10691802.png" alt="date image">
+          </div>
+        </div>
+    </div>
+
+    <!-- profit and loss card -->
+    <div class="top-card">
+      <div class="top-card-heading">Profit & Loss</div>
+      <div class="top-card-money pnl-money">₹346.43</div>
+      <div class="top-card-footer">
+        <div class="top-card-footer-left">
+          <div class="top-card-footer-left-row1">Transaction</div>
+          <div class="top-card-footer-left-row2">Download Summary</div>
+        </div>
+        <div class="top-card-footer-right">
+          <img src="https://cdn-icons-png.flaticon.com/128/10691/10691802.png" alt="date image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- middle main -->
+  <div class="middle-main">
+
+    <!-- chart card -->
+    <div class="chart-container">
+      <div class="top-card-heading">Chart</div>
+      <div class="chart-img">
+        <img src="img/chart.png" alt="chart image">
+      </div>
+    </div>
+
+    <!-- trade card -->
+    <div class="trades">
+      <div class="top-card-heading">List Of Trades</div>
+      <div class="trade">
+        <div class="left-trade">
+          <div class="left-trade-date">8 Feb 2024</div>
+          <div class="left-trade-name">Vodafone Idea </div>
+          <div class="left-trade-type">Delivery</div>
+        </div>
+        <div class="right-trade">
+          <div class="right-trade-buy-sell">Buy</div>
+          <div class="right-trade-quantity">Qty: 2000</div>
+          <div class="right-trade-price">At ₹9.4</div>
+        </div>
+      </div>
+      <div class="trade">
+        <div class="left-trade">
+          <div class="left-trade-date">8 Feb 2024</div>
+          <div class="left-trade-name">Vodafone Idea </div>
+          <div class="left-trade-type">Delivery</div>
+        </div>
+        <div class="right-trade">
+          <div class="right-trade-buy-sell">Buy</div>
+          <div class="right-trade-quantity">Qty: 2000</div>
+          <div class="right-trade-price">At ₹9.4</div>
+        </div>
+      </div>
+      <div class="trade">
+        <div class="left-trade">
+          <div class="left-trade-date">8 Feb 2024</div>
+          <div class="left-trade-name">Vodafone Idea </div>
+          <div class="left-trade-type">Delivery</div>
+        </div>
+        <div class="right-trade">
+          <div class="right-trade-buy-sell">Buy</div>
+          <div class="right-trade-quantity">Qty: 2000</div>
+          <div class="right-trade-price">At ₹9.4</div>
+        </div>
+      </div>
+      <div class="trade">
+        <div class="left-trade">
+          <div class="left-trade-date">8 Feb 2024</div>
+          <div class="left-trade-name">Vodafone Idea </div>
+          <div class="left-trade-type">Delivery</div>
+        </div>
+        <div class="right-trade">
+          <div class="right-trade-buy-sell">Buy</div>
+          <div class="right-trade-quantity">Qty: 2000</div>
+          <div class="right-trade-price">At ₹9.4</div>
+        </div>
+      </div>
+      <div class="trade">
+        <div class="left-trade">
+          <div class="left-trade-date">8 Feb 2024</div>
+          <div class="left-trade-name">Vodafone Idea </div>
+          <div class="left-trade-type">Delivery</div>
+        </div>
+        <div class="right-trade">
+          <div class="right-trade-buy-sell">Buy</div>
+          <div class="right-trade-quantity">Qty: 2000</div>
+          <div class="right-trade-price">At ₹9.4</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>

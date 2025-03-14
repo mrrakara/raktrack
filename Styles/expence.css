@@ -1,0 +1,196 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+body {
+  overflow: hidden;
+}
+
+.main-container {
+  position: relative;
+}
+
+/* expence container */
+.expence-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.top-card,
+.expence-container-right-quick-actions,
+.expence-container-right-bank {
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.expence-container-right {
+  width: 40%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expence-container-left {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(39, 122, 122);
+  border-radius: 15px 15px 0 0;
+}
+
+
+
+/* Transaction Card */
+
+.heading {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  color: white;
+}
+
+.card-container {
+  height: calc(100% - 50px);
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.card-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.card-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d5aeff, #2575fc);
+  border-radius: 10px;
+}
+
+.transactions-card {
+  width: 98%;
+  margin: 10px auto;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.transactions-card-date,
+.transactions-card-payment-type,
+.transactions-card-status {
+  color: grey;
+  font-size: 12px;
+}
+
+.transactions-card-credit-debit {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(0, 184, 28);
+  letter-spacing: 1px;
+}
+
+.transactions-card-amount,
+.transactions-card-heading {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(56, 56, 56);
+  letter-spacing: 2px;
+}
+
+/* expence card */
+
+
+
+/* quick actions */
+.expence-container-right-quick-actions {
+  background-color: rgb(255, 255, 255);
+  height: 210px;
+  margin-bottom: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.header {
+  background: black;
+  width: 100%;
+  height: 50px;
+  border-radius: 9px 9px 0 0;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.action-list {
+  list-style: none;
+  padding: 15px;
+  height: calc(100% - 50px);
+}
+
+.action-list li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  padding: 2px 0;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.action-list li:hover {
+  color: black;
+  transform: translateX(5px);
+}
+
+.action-list img {
+  width: 24px;
+  margin-right: 12px;
+}
+
+/* bank Card */
+.expence-container-right-bank {
+  height: 170px;
+  background-color: rgb(255, 255, 255);
+}
+
+.expence-container-right-name {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  ;
+  color: #3377ff;
+  width: 100%;
+  text-align: center;
+
+}
+
+.expence-container-right-account-type {
+  color: rgb(81, 81, 81);
+  font-size: 25px;
+}
+
+.expence-container-right-account-no {
+  letter-spacing: 2px;
+  ;
+}
+
+.expence-container-right-balance {
+  color: rgb(0, 184, 28);
+  font-weight: bold;
+  font-size: 30px;
+  ;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 2px;
+}
